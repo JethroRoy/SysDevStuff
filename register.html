@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Register</title>
+</head>
+<body>
+
+        <div class="container">
+                <!-- Main component for a primary marketing message or call to action -->
+                <div class="panel">
+                  <div class="panel panel-warning">
+                        <div class="panel-heading"><h4>Fill in the information about the new employee</h4></div>
+                        <div class="panel-body">
+
+                            <div>
+
+                                <div id="employeeInfo">
+
+                                <h4><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Employee's Info</h4>
+                                <form action="" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">Employee ID</label>
+                                        <div class="col-sm-10">
+                                        <input type="text" placeholder="Employee ID" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                    <label for="" class="col-sm-2 control-label">Username</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" placeholder="Username" class="form-control">
+                                    </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">Password</label>
+                                        <div class="col-sm-10">
+                                        <input type="text" placeholder="Password" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">First Name</label>
+                                        <div class="col-sm-10">
+                                        <input type="text" placeholder="First Name" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">Last Name</label>
+                                        <div class="col-sm-10">
+                                        <input type="text" placeholder="Last Name" class="form-control">
+                                        </div>
+                                    </div>
+
+                                </form>
+                                </div>
+                                <br />
+                                <h4><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Contact</h4>
+                                <div id="contact">
+                                    <form action="" class="form-horizontal">
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-2 control-label">E-Mail</label>
+                                            <div class="col-sm-10">
+                                            <input type="text" placeholder="E-Mail" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-2 control-label">Telephone</label>
+                                            <div class="col-sm-10">
+                                            <input type="text" placeholder="Telephone" class="form-control">
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <br />
+                                <div id="address">
+                                    <h4><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Address</h4>
+                                    <form action="" class="form-horizontal">
+
+                                            <div class="form-group" id="stValidaton">
+                                                <label for="street" class="col-sm-2 control-label">Street </label>
+                                                <div class="col-sm-10">
+                                                <input type="text" placeholder="Street name" name="" class="form-control" id="street">
+                                                <p id="stErr"></p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="ctyValidation">
+                                                <label for="city" class="col-sm-2 control-label">City</label>
+                                                <div class="col-sm-10">
+                                                <input type="text" placeholder="City" name="" class="form-control" id="city">
+                                                <p id="ctyErr"></p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="pvValidation">
+                                                <label for="province" class="col-sm-2 control-label">Province</label>
+                                                <div class="col-sm-10">
+                                                <input type="text" placeholder="Province" name="" class="form-control" id="province">
+                                                <p id="pvErr"></p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="zipValidation">
+                                                <label for="postalCode" class="col-sm-2 control-label">Postal Code</label>
+                                                <div class="col-sm-10">
+                                                <input type="text" placeholder="A1A 1A1" name="" class="form-control" id="postalCode">
+                                                <p id="zipErr"></p>
+                                                </div>
+                                            </div>
+
+                                    </form>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        
+        </div>
+
+        <div id="buttons">
+                <button type="button" class="btn btn-danger" onclick="resetLabelColor(fieldID)">Reset</button>
+                <button type="button" class="btn btn-primary" onclick="validateForm()">Submit</button>
+        </div>
+
+</body>
+</html>
+
